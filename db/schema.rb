@@ -16,14 +16,14 @@ ActiveRecord::Schema.define(version: 201710051107) do
   enable_extension "plpgsql"
 
   create_table "adoptions", id: :serial, force: :cascade do |t|
-    t.integer "owner_id_id", null: false
-    t.integer "pet_id_id", null: false
-    t.date "adotion_date"
+    t.integer "owner_id"
+    t.integer "pet_id"
+    t.date "adoption_date"
     t.integer "cost"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["owner_id_id"], name: "index_adoptions_on_owner_id_id"
-    t.index ["pet_id_id"], name: "index_adoptions_on_pet_id_id"
+    t.index ["owner_id"], name: "index_adoptions_on_owner_id"
+    t.index ["pet_id"], name: "index_adoptions_on_pet_id"
   end
 
   create_table "owners", id: :serial, force: :cascade do |t|
