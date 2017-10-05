@@ -1,0 +1,9 @@
+development:
+  adapter: "postgresql"
+  database: "pet_shelter_development"
+test:
+  adapter: "postgresql"
+  database: "pet_shelter_test"
+production:
+  adapter: "postgresql"
+  database: "pet_shelter_production"
