@@ -30,10 +30,14 @@ cost integer default=0
  $ rake db:create APP_ENV=test
  ```
  ### Migrate
- $ touch date_create_table.rb
+ ```bash
+ $ touch timestamp_create_table.rb
  $ rake db:migrate APP_ENV=test
-
+```
  ### Model
+ ```bash
+ $ touch model.rb
+ ```
  ### Validate
  ### Associate
  ### Seed
